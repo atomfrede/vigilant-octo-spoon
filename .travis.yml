@@ -11,5 +11,8 @@ before_install:
   - jdk_switcher use oraclejdk8
   - java -version
 
+script:
+  - ./gradlew clean check jacocoTestReport
+
 after_success:
   - bash <(curl -s https://codecov.io/bash)
