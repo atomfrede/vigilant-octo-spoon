@@ -10,6 +10,7 @@ public class Hobbit extends AbstractTolkienCharacter {
 
     @Override
     public String name() {
+        System.out.println("Hello");
         return this.name;
     }
 
