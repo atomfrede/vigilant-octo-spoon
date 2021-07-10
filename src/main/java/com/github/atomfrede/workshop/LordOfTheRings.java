@@ -19,4 +19,14 @@ public class LordOfTheRings {
         return hobbits;
     }
 
+    public List<TolkienCharacter> humans() {
+
+        List<TolkienCharacter> humans = new ArrayList<>();
+
+        Human boromir = new Human("Boromir");
+        humans.add(boromir);
+        return humans;
+
+    }
+
 }
